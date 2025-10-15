@@ -1,1 +1,0 @@
-# BSIT-3B-D-Programmers
