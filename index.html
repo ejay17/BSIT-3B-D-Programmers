@@ -1,16 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookaka</title>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xayona Web</title>
-    <link href="" rel="stylesheet">
-    <link href="" rel="stylesheet">
-  </head>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <body>
-    
-  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8c32c;
+      color: #333;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    header {
+      background-color: #ddebf4;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 60px;
+    }
+
+    .logo img {
+      height: 60px;
+      width: auto;
+    }
+
+    nav a {
+      margin-left: 25px;
+      font-weight: 600;
+      color: #444;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c41c1c;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+      background: #f8c32c;
+      padding: 40px 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px; /* this controls spacing between chef and phone */
+      flex-wrap: wrap;
+    }
+
+    .chef {
+      flex: 1;
+      text-align: left;
+    }
+
+    .chef img {
+      width: 85%;
+      max-width: 1000px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .download {
+      flex: 1;
+      text-align: left;
+    }
+
+    .download h2 {
+      font-family: 'Kaushan Script', cursive;
+      color: #a6141e;
+      font-size: 1.9em;
+      margin-bottom: 25px;
+    }
+
+    .phone {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1a1a1a;
+      border-radius: 25px;
+      padding: 10px;
+      width: 290px;
+      height: 165px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .phone img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .download button {
+      background-color: #c41c1c;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-size: 1em;
+    }
+
+    .download button:hover {
+      background-color: #a6141e;
+    }
+
+    /* --- About --- */
+    .about {
+      max-width: 800px;
+      margin: 30px auto;
+      text-align: center;
+      line-height: 1.6;
+      color: #4b4b4b;
+      padding: 0 20px;
+    }
+
+    /* --- Follow Section --- */
+    .follow {
+      background: #e3b822;
+      text-align: center;
+      padding: 25px 0;
+      margin: 40px 0;
+      border-radius: 10px;
+    }
+
+    .follow h3 {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      width: 38px;
+      height: 38px;
+      background: #c41c1c;
+      color: white;
+      line-height: 38px;
+      border-radius: 50%;
+      margin: 6px;
+      font-weight: bold;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: #a6141e;
+    }
+
+    /* --- News Section --- */
+    .news {
+      background: #ddebf4;
+      width: 85%;
+      margin: auto;
+      padding: 30px 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .news h3 {
+      background: #c41c1c;
+      color: white;
+      padding: 8px 20px;
+      display: inline-block;
+      border-radius: 5px;
+      margin-bottom: 25px;
+      letter-spacing: 2px;
+    }
+
+    .news-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .news-item img {
+      width: 90px;
+      height: 90px;
+      margin-right: 20px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .news-item h4 {
+      color: #c41c1c;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .news-item p {
+      font-size: 0.9em;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* --- Gallery Section --- */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to right, #a6141e, #c41c1c);
+      padding: 25px 10px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid white;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #ddebf4;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+      .chef, .download {
+        text-align: center;
+      }
+      .phone {
+        width: 80%;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="COOK WEB LAYOUT/images/logo.jpg" alt="Logo">
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">News</a>
+      <a href="#">Gallery</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="chef">
+      <img src="COOK WEB LAYOUT/images/bg-page.png" alt="Chef Image">
+    </div>
+    <div class="download">
+      <h2>Download the game that started it all!</h2>
+      <div class="phone">
+        <img src="COOK WEB LAYOUT/images/smartphone.png" alt="Phone Preview">
+      </div>
+      <button>Click Here!</button>
+    </div>
+  </section>
+
+  <div class="about">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quam nulla, aliquet quis tincidunt in, convallis vel leo. Ut felis purus, pulvinar at adipiscing ut, gravida in lorem. Pellentesque eu nisi nec purus blandit blandit.</p>
+  </div>
+
+  <section class="follow">
+    <h3>FOLLOW US</h3>
+    <div class="social-icons">
+      <a href="#">F</a>
+      <a href="#">T</a>
+      <a href="#">I</a>
+    </div>
+  </section>
+
+  <section class="news">
+    <h3>NEWS</h3>
+    <div class="news-item">
+      <img src="COOK WEB LAYOUT/images/news1.jpg" alt="">
+      <div>
+        <h4>News title one</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quam nulla.</p>
+      </div>
+    </div>
+    <div class="news-item">
+      <img src="COOK WEB LAYOUT/images/news2.jpg" alt="">
+      <div>
+        <h4>News title two</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quam nulla.</p>
+      </div>
+    </div>
+    <div class="news-item">
+      <img src="COOK WEB LAYOUT/images/news3.jpg" alt="">
+      <div>
+        <h4>News title three</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quam nulla.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <img src="COOK WEB LAYOUT/images/gallery1.jpg" alt="">
+    <img src="COOK WEB LAYOUT/images/gallery2.jpg" alt="">
+    <img src="COOK WEB LAYOUT/images/gallery3.jpg" alt="">
+    <img src="COOK WEB LAYOUT/images/gallery4.jpg" alt="">
+  </section>
+
+  <footer>
+    <p>&copy; Copyright © 2025. Company name all rights reserved.</p>
+  </footer>
+</body>
 </html>
