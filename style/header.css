@@ -5,10 +5,11 @@
           font-style: italic;
 }
 
-header {
+.header {
           width: 100%;
           display: flex;
           justify-content: space-between;
+          background-color: rgb(249, 252, 255);
 }
 
 .nav-list {

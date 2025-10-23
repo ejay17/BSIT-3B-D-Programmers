@@ -1,0 +1,79 @@
+body {
+          margin: 0;
+          padding: 0;
+          background-image: url("../images/bg-body.jpg");
+}
+
+@font-face {
+          font-family: 'Open Sans';
+          src: url('../fonts/opensans-bolditalic-webfont.ttf') format('truetype');
+          font-weight: 700;
+          font-style: italic;
+}
+
+/* Header */
+
+header {
+          width: 100%;
+          background-color: #deedf6;
+}
+
+#header {
+          margin: 0px 150px;
+          padding: 1rem;
+          display: flex;
+          justify-content: space-between;
+}
+
+.nav-list {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+}
+
+.nav-list ul {
+          padding: 0;
+          display: flex;
+          justify-content: space-between;
+          gap: 3rem;
+}
+
+.nav-list ul li {
+          background-color: transparent;
+          list-style: none;
+}
+
+.nav-list ul li a {
+          font-family: 'Open Sans', sans-serif;
+          text-decoration: none;
+          color: rgb(116, 116, 116);
+}
+
+/* ===== Hero Section ====== */
+
+.hero {
+          display: grid;
+          grid-template-columns: ;
+          grid-template-rows: ;
+}
+
+.chef-phone-wrapper {
+  position: relative;     /* This makes it the parent positioning box */
+  display: inline-block;  /* So both images stay inline together */
+}
+
+.chef-img {
+  position: absolute;
+  top: 0px;
+  left: -70px;
+  width: 100%;           /* adjust to your image size */
+  z-index: 1;             /* behind */
+}
+
+.phone-img {
+  position: absolute;
+  top: 0px;              /* adjust position as needed */
+  right: 250px;
+  width: 50%;
+  z-index: 2;             /* above chef image */
+}
