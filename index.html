@@ -50,57 +50,51 @@
     /* Hero Section */
     .hero {
       background: #f8c32c;
-      padding: 40px 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
+      padding: 60px 15px;
+      text-align: center;
     }
 
-    .chef img {
-      width: 85%;
-      max-width: 500px;
-      height: auto;
-    }
-
-    .download {
-      flex: 1;
-      text-align: left;
-    }
-
-    .download h2 {
+    .hero h2 {
       font-family: 'Kaushan Script', cursive;
       color: #a6141e;
-      font-size: 1.8em;
+      font-size: 1.9em;
       margin-bottom: 25px;
     }
 
-    .phone {
+    /* Chef and Phone Wrapper */
+    .chef-phone-wrapper {
       display: flex;
-      align-items: center;
       justify-content: center;
-      background-color: #1a1a1a;
-      border-radius: 25px;
-      padding: 10px;
-      width: 290px;
-      height: 165px;
-      margin-bottom: 15px;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      align-items: center;
+      position: relative;
+      flex-wrap: wrap;
     }
 
-    .phone img {
-      width: 100%;
-      height: 100%;
-      border-radius: 20px;
-      object-fit: cover;
+    .chef-phone-wrapper img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .chef-img {
+      width: 230px;
+      position: relative;
+      z-index: 1;
+      margin-right: -100px; /* overlap amount */
+    }
+
+    .phone-img {
+      width: 250px;
+      position: relative;
+      z-index: 2;
     }
 
     /* Buttons under phone */
     .button-group {
       display: flex;
-      gap: 15px;
+      justify-content: center;
       align-items: center;
+      gap: 15px;
+      margin-top: 25px;
     }
 
     .view-more {
@@ -260,12 +254,14 @@
     }
 
     @media (max-width: 900px) {
-      .hero {
+      .chef-phone-wrapper {
         flex-direction: column;
-        text-align: center;
+        margin-right: 0;
       }
-      .chef img {
-        width: 70%;
+
+      .chef-img {
+        margin-right: 0;
+        margin-bottom: -40px; /* overlap on smaller screens */
       }
     }
   </style>
@@ -287,21 +283,17 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="chef">
-      <img src="images/bg-page.png" alt="Chef Image">
+    <h2>Download the game that started it all!</h2>
+    <div class="chef-phone-wrapper">
+      <img src="images/bg-page.png" alt="Chef" class="chef-img">
+      <img src="images/smartphone.png" alt="Phone" class="phone-img">
     </div>
-    <div class="download">
-      <h2>Download the game that started it all!</h2>
-      <div class="phone">
-        <img src="images/smartphone.png" alt="Phone Preview">
-      </div>
 
-      <div class="button-group">
-        <button class="view-more">
-          <i class="bi bi-wallet2"></i> View More
-        </button>
-        <button class="click-here">Click Here!</button>
-      </div>
+    <div class="button-group">
+      <button class="view-more">
+        <i class="bi bi-wallet2"></i> View More
+      </button>
+      <button class="click-here">Click Here!</button>
     </div>
   </section>
 
