@@ -5,17 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cookaka</title>
 
-<<<<<<< HEAD
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cook Web</title>
-    <link href="" rel="stylesheet">
-    <link href="" rel="stylesheet">
-  </head>
-
-  <body>
-  </body>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -56,6 +47,7 @@
       margin-left: 25px;
       font-weight: 600;
       color: #444;
+      text-decoration: none;
       transition: color 0.3s;
     }
 
@@ -70,7 +62,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 40px; /* this controls spacing between chef and phone */
+      gap: 40px;
       flex-wrap: wrap;
     }
 
@@ -161,14 +153,13 @@
 
     .social-icons a {
       display: inline-block;
-      width: 38px;
-      height: 38px;
+      width: 40px;
+      height: 40px;
       background: #c41c1c;
       color: white;
-      line-height: 38px;
+      line-height: 40px;
       border-radius: 50%;
       margin: 6px;
-      font-weight: bold;
       font-size: 18px;
       transition: background 0.3s;
     }
@@ -224,6 +215,21 @@
       font-size: 0.9em;
       color: #555;
       line-height: 1.5;
+    }
+
+    .gcash-btn {
+      display: inline-block;
+      background-color: #0070ba;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .gcash-btn:hover {
+      background-color: #005c99;
     }
 
     /* --- Gallery Section --- */
@@ -308,9 +314,10 @@
   <section class="follow">
     <h3>FOLLOW US</h3>
     <div class="social-icons">
-      <a href="#">F</a>
-      <a href="#">T</a>
-      <a href="#">I</a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-google"></i></a>
     </div>
   </section>
 
@@ -321,6 +328,7 @@
       <div>
         <h4>News title one</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quam nulla.</p>
+        <a href="#" class="gcash-btn"><i class="bi bi-eye"></i> View More</a>
       </div>
     </div>
     <div class="news-item">
@@ -328,6 +336,7 @@
       <div>
         <h4>News title two</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quam nulla.</p>
+        <a href="#" class="gcash-btn"><i class="bi bi-eye"></i> View More</a>
       </div>
     </div>
     <div class="news-item">
@@ -335,6 +344,7 @@
       <div>
         <h4>News title three</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quam nulla.</p>
+        <a href="#" class="gcash-btn"><i class="bi bi-eye"></i> View More</a>
       </div>
     </div>
   </section>
@@ -347,7 +357,7 @@
   </section>
 
   <footer>
-    <p>&copy; Copyright © 2025. Company name all rights reserved.</p>
+    <p>&copy; 2025. Company name all rights reserved.</p>
   </footer>
 </body>
 </html>
