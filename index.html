@@ -5,11 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cookaka</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<<<<<<< HEAD
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook Web</title>
+    <link href="" rel="stylesheet">
+    <link href="" rel="stylesheet">
+  </head>
 
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <body>
+  </body>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -20,14 +26,18 @@
       padding: 0;
       box-sizing: border-box;
     }
-
+    
     body {
-      font-family: 'Poppins', sans-serif;
       background-color: #f8c32c;
       color: #333;
     }
 
-    /* Header */
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
     header {
       background-color: #ddebf4;
       display: flex;
@@ -36,33 +46,58 @@
       padding: 15px 60px;
     }
 
+    .logo img {
+      height: 60px;
+      width: auto;
+    }
+
     nav a {
       margin-left: 25px;
       font-weight: 600;
       color: #444;
       text-decoration: none;
     }
-
+    
     nav a:hover {
       color: #c41c1c;
     }
 
-    /* Hero Section */
+    /* --- Hero Section --- */
     .hero {
       background: #f8c32c;
-      padding: 60px 15px;
-      text-align: center;
+      padding: 40px 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px; /* this controls spacing between chef and phone */
+      flex-wrap: wrap;
     }
 
-    .hero h2 {
+    .chef {
+      flex: 1;
+      text-align: left;
+    }
+
+    .chef img {
+      width: 85%;
+      max-width: 1000px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .download {
+      flex: 1;
+      text-align: left;
+    }
+
+    .download h2 {
       font-family: 'Kaushan Script', cursive;
       color: #a6141e;
       font-size: 1.9em;
       margin-bottom: 25px;
     }
 
-    /* Chef and Phone Wrapper */
-    .chef-phone-wrapper {
+    .phone {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -92,31 +127,23 @@
     .button-group {
       display: flex;
       justify-content: center;
-      align-items: center;
-      gap: 15px;
-      margin-top: 25px;
+      background-color: #1a1a1a;
+      border-radius: 25px;
+      padding: 10px;
+      width: 290px;
+      height: 165px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
     }
 
-    .view-more {
-      background-color: #d2a617;
-      border: none;
-      color: #3c2805;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      cursor: pointer;
-      transition: all 0.3s;
-      box-shadow: inset 0 -3px 0 #b28910;
+    .phone img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
     }
 
-    .view-more:hover {
-      background-color: #c39a12;
-    }
-
-    .click-here {
+    .download button {
       background-color: #c41c1c;
       color: white;
       border: none;
@@ -129,11 +156,11 @@
       box-shadow: inset 0 -3px 0 #8f1111;
     }
 
-    .click-here:hover {
+    .download button:hover {
       background-color: #a6141e;
     }
 
-    /* About */
+    /* --- About --- */
     .about {
       max-width: 800px;
       margin: 30px auto;
@@ -142,7 +169,7 @@
       padding: 0 20px;
     }
 
-    /* Follow Us */
+    /* --- Follow Section --- */
     .follow {
       background: #e3b822;
       text-align: center;
@@ -150,12 +177,12 @@
       margin: 40px 0;
       border-radius: 10px;
     }
-
+    
     .follow h3 {
       font-weight: 600;
       margin-bottom: 10px;
     }
-
+    
     .social-icons a {
       color: white;
       background-color: #c41c1c;
@@ -169,12 +196,12 @@
       font-size: 18px;
       transition: background 0.3s;
     }
-
+    
     .social-icons a:hover {
       background-color: #a6141e;
     }
 
-    /* News */
+    /* --- News Section --- */
     .news {
       background: #ddebf4;
       width: 85%;
@@ -183,7 +210,7 @@
       border-radius: 10px;
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     }
-
+    
     .news h3 {
       background: #c41c1c;
       color: white;
@@ -193,7 +220,7 @@
       letter-spacing: 2px;
       display: inline-block;
     }
-
+    
     .news-item {
       display: flex;
       align-items: flex-start;
@@ -202,7 +229,7 @@
       padding-bottom: 15px;
       flex-wrap: wrap;
     }
-
+    
     .news-item img {
       width: 90px;
       height: 90px;
@@ -210,19 +237,19 @@
       border-radius: 10px;
       object-fit: cover;
     }
-
+    
     .news-item h4 {
       color: #c41c1c;
       font-weight: 600;
       margin-bottom: 5px;
     }
-
+    
     .news-item p {
       font-size: 0.9em;
       color: #555;
     }
 
-    /* Gallery */
+    /* --- Gallery Section --- */
     .gallery {
       display: flex;
       justify-content: center;
@@ -231,7 +258,7 @@
       flex-wrap: wrap;
       gap: 20px;
     }
-
+    
     .gallery img {
       width: 160px;
       height: 160px;
@@ -240,11 +267,11 @@
       transition: transform 0.3s;
       object-fit: cover;
     }
-
+    
     .gallery img:hover {
       transform: scale(1.05);
     }
-
+    
     footer {
       background: #ddebf4;
       text-align: center;
@@ -252,26 +279,26 @@
       font-size: 0.9em;
       color: #555;
     }
-
+    
     @media (max-width: 900px) {
       .chef-phone-wrapper {
         flex-direction: column;
         margin-right: 0;
       }
-
-      .chef-img {
-        margin-right: 0;
-        margin-bottom: -40px;
+      .chef, .download {
+        text-align: center;
+      }
+      .phone {
+        width: 80%;
+        height: 200px;
       }
     }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
     <div class="logo">
-      <img src="images/logo.jpg" alt="Logo" style="height:60px;">
+      <img src="images/logo.jpg" alt="Logo">
     </div>
     <nav>
       <a href="#">Home</a>
@@ -281,7 +308,6 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
     <h2>Download the game that started it all!</h2>
     <div class="chef-phone-wrapper">
@@ -297,12 +323,10 @@
     </div>
   </section>
 
-  <!-- About -->
   <div class="about">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quam nulla, aliquet quis tincidunt in, convallis vel leo. Ut felis purus, pulvinar at adipiscing ut, gravida in lorem.</p>
   </div>
 
-  <!-- Follow Us -->
   <section class="follow">
     <h3>FOLLOW US</h3>
     <div class="social-icons">
@@ -312,7 +336,6 @@
     </div>
   </section>
 
-  <!-- News -->
   <section class="news">
     <h3>NEWS</h3>
     <div class="news-item">
@@ -338,7 +361,6 @@
     </div>
   </section>
 
-  <!-- Gallery -->
   <section class="gallery">
     <img src="images/gallery1.jpg" alt="">
     <img src="images/gallery2.jpg" alt="">
@@ -346,7 +368,6 @@
     <img src="images/gallery4.jpg" alt="">
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; Copyright © 2025. Company name all rights reserved.</p>
   </footer>
