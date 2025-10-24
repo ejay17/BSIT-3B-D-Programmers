@@ -4,15 +4,16 @@
 <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Cookaka</title>
-          <link rel="stylesheet" href="../style/about.css">
+          <title>Cookako</title>
+          <link rel="stylesheet" href="../style/news.css">
           <link rel="stylesheet" href="../style/header.css">
+
 </head>
 
 <body>
 
           <!-- Header -->
-          <div id="header"></div>
+          <header id="header"></header>
 
           <script>
                     fetch("../snippets/header.html")
@@ -21,6 +22,10 @@
                                         document.getElementById("header").innerHTML = data;
                               });
           </script>
+
+          <section id="news-content">
+                    <img src="../images/bg-page.png" alt="">
+          </section>
 
 
 </body>
