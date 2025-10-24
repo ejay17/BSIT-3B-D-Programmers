@@ -1,0 +1,35 @@
+@font-face {
+          font-family: 'Open Sans';
+          src: url('../fonts/opensans-bolditalic-webfont.ttf') format('truetype');
+          font-weight: 700;
+          font-style: italic;
+}
+
+header {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+}
+
+.nav-list {
+          display: flex;
+          flex-direction: column;
+}
+
+.nav-list ul {
+          width: 20%;
+          display: flex;
+          justify-content: space-between ;
+          gap: 3rem;
+}
+
+.nav-list ul li {
+          background-color: transparent;
+          list-style: none;
+}
+
+.nav-list ul li a {
+          font-family: 'Open Sans', sans-serif;
+          text-decoration: none;
+          color: rgb(68, 68, 68);
+}
