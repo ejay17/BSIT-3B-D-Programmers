@@ -8,9 +8,35 @@ body {
 }
 
 #news-container {
+          width: 100%;
+}
+
+/* --- News --- */
+
+.chef-news {
+          width: 100%;
+          display: flex;
 }
 
 .chef {
+          margin-left: 60px;
+          width: 150%;
           position: relative;
-          left: 5%;
+}
+
+.news {
+          width: 40vw;
+          height: auto;
+          position: absolute;
+          left: 46%;
+          top: 30%;
+          background-image: url('../images/interface\ copy.png');
+          background-repeat: no-repeat;
+          z-index: 3;
+          border-radius: 10px;
+}
+
+.chef-news .news-header {
+          padding: 1.5rem;
+          text-align: center;
 }
