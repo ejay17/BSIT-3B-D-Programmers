@@ -6,3 +6,15 @@
 body {
           background-image: url('../images/bg-body.jpg');
 }
+
+.chef{
+    display: flex;
+}
+
+.smartphone{
+    display: flex;
+}
+
+.chef, .smartphone{
+    flex-wrap: wrap;
+}
