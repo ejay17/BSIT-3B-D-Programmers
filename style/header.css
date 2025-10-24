@@ -7,20 +7,22 @@
 
 header {
           width: 100%;
-          display: flex;
-          justify-content: space-between;
+          background-color: rgb(225, 243, 255);
 }
 
-.nav-list {
+.header-wrapper {
+          padding: 20px 240px;
           display: flex;
-          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+
 }
 
 .nav-list ul {
-          width: 20%;
           display: flex;
-          justify-content: space-between ;
+          justify-content: space-between;
           gap: 3rem;
+          
 }
 
 .nav-list ul li {
@@ -31,5 +33,11 @@ header {
 .nav-list ul li a {
           font-family: 'Open Sans', sans-serif;
           text-decoration: none;
-          color: rgb(68, 68, 68);
+          color: rgb(116, 116, 116);
+          font-size: 25px;
+}
+
+.cookako-logo{
+    width: 600px;
+    height: 200px;
 }
