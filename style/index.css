@@ -9,12 +9,20 @@ body {
 
 .chef{
     display: flex;
+    margin: 0px -1200px 0px -200px;
+    width: 1800px;
+    height: 800px;
 }
 
 .smartphone{
     display: flex;
+    width: 900px;
+    height: 800px;
 }
 
-.chef, .smartphone{
-    flex-wrap: wrap;
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
