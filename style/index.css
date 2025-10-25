@@ -9,14 +9,14 @@ body {
 
 .chef{
     display: flex;
-    margin: 0% -60% 0% 0%;
-    width: 100%;
+    margin: 0% -20% 0% 10%;
+    width: 53%;
     height: 60%;
 }
 
 .smartphone{
     display: flex;
-    width: 50%;
+    width: 60%;
     height: 50%;
 }
 
@@ -37,15 +37,16 @@ pre{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 10%;
-    justify-content: center;
-    align-items: center;
-    margin: 2% 0% 0% 15%;
     font-size: 130%;
 }
 
 .follow{
-    width: 250%;
-    margin: 10% 0% 0% 0%;
-    padding: 10% 0% 0% 0%;
+    z-index: 1;
+}
+.flowe{
+    z-index: 2;
+}
+
+.following{
+    position: relative;   
 }
