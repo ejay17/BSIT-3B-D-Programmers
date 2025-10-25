@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Cookaka</title>
+          <link rel="stylesheet" href="../style/header.css">
+          <link rel="stylesheet" href="../style/news.css">
+</head>
+
+<body>
+
+          <!-- Header -->
+          <header id="header">
+                    <script>
+                              fetch("../snippets/header.html")
+                                        .then(response => response.text())
+                                        .then(data => {
+                                                  document.getElementById("header").innerHTML = data;
+                                        });
+                    </script>
+          </header>
+
+          <section id="news-container">
+                    <div class="chef-news">
+                              <img class="chef" src="../images/bg-page.png" alt="chef" class="chef">
+                              
+                              <div class="news">
+                                        <h3 class="news-header">NEWS</h3>
+                              
+                              
+                              </div>
+                    </div>
+          </section>
+</body>
+
+</html>

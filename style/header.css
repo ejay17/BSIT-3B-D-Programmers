@@ -1,43 +1,42 @@
 @font-face {
-          font-family: 'Open Sans';
-          src: url('../fonts/opensans-bolditalic-webfont.ttf') format('truetype');
-          font-weight: 700;
-          font-style: italic;
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-bolditalic-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
 }
 
 header {
-          width: 100%;
-          background-color: rgb(225, 243, 255);
+    width: 100%;
+    background-color: rgb(225, 243, 255);
 }
 
 .header-wrapper {
-          padding: 20px 240px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+    padding: 20px 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
 .nav-list ul {
-          display: flex;
-          justify-content: space-between;
-          gap: 3rem;
-          
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
 }
 
 .nav-list ul li {
-          background-color: transparent;
-          list-style: none;
+    background-color: transparent;
+    list-style: none;
 }
 
 .nav-list ul li a {
-          font-family: 'Open Sans', sans-serif;
-          text-decoration: none;
-          color: rgb(116, 116, 116);
-          font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: rgb(116, 116, 116);
 }
 
-.cookako-logo{
+.cookako-logo {
     width: 600px;
     height: 200px;
 }
