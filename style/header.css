@@ -11,7 +11,7 @@ header {
 }
 
 .header-wrapper {
-    padding: 20px 240px;
+    padding: 20px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
