@@ -19,13 +19,11 @@ body {
 }
 
 .chef {
-          width: 150%;
-          padding-left: ;
+          padding-left: 5%;
 }
 
 .news {
           width: 40vw;
-          height: auto;
           position: absolute;
           left: 46%;
           top: 30%;
@@ -36,6 +34,6 @@ body {
 }
 
 .chef-news .news-header {
-          padding: 1.5rem;
+          padding: 1.3rem;
           text-align: center;
 }
