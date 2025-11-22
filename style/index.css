@@ -26,6 +26,7 @@ body {
     flex: wrap;
     flex-direction: row;
     width: 120%;
+    margin: 0px 0px 50px 0px;
 }
 
 .chef{
@@ -35,8 +36,43 @@ body {
 }
 
 .phone{
-    width: 100%;
-    height: 100%;
+    width: 300%;
+    height: 300%;
+    margin: 0px 0px -40px 0px;
+}
+
+.phone-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 360%;
+    height: 360%;
+    justify-content: center;
+}
+
+.vc-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:100%;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+.viewmore, .clickhere{
+    width: 30%;
+}
+
+.viewmore:hover{
+    mask-image: url(../images/viewmore\(clicked\)png.png);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
+
+.clickhere:hover{
+    mask-image: url(../images/clickhere\(clicked\).png);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-mode: luminance;
 }
 
 .txto{
