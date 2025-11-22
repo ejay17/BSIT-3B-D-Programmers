@@ -1,8 +1,8 @@
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/opensans-bolditalic-webfont.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
 }
 
 header {
@@ -15,7 +15,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-bolditalic-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
 }
 
 .nav-list ul {
