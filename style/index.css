@@ -5,4 +5,157 @@
 
 body {
           background-image: url('../images/bg-body.jpg');
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: 100%;
+}
+
+.my-container{
+    display: flex;
+    flex: wrap;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-wrapper{
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    width: 120%;
+    margin: 0px 0px 50px 0px;
+}
+
+.chef{
+    width: 300%;
+    margin: 0px -240px 0px 0px;
+    height: 300%;
+}
+
+.phone{
+    width: 300%;
+    height: 300%;
+    margin: 0px 0px -40px 0px;
+}
+
+.phone-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 360%;
+    height: 360%;
+    justify-content: center;
+}
+
+.vc-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+.viewmore, .clickhere{
+    width: 30%;
+}
+
+.viewmore:hover{
+   content: url("../images/viewmore\(clicked\)png.png");
+   width: 30%;
+}
+
+.clickhere:hover{
+     content: url("../images/clickhere\(clicked\).png");
+     width: 30%;
+}
+
+.txto{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    src: url('../fonts/opensans-regular-webfont.ttf') format('truetype');
+    font-weight: 200;
+    color: rgb(128, 80, 25);
+}
+
+.mid-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.firstmid-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+
+.firstmid1-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.firstmid2-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow{
+    width: 200%;
+    height: 180%;
+}
+
+.followtxt{
+    position: absolute;
+    top: 172%;
+    left: 24.5%;
+    color: rgb(156, 106, 30);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-size: 300%;
+    letter-spacing: 6px;
+    width: 20%;
+}
+
+.icons{
+    position: absolute;
+    top: 182%;
+    left: 21.5%;
+    width: 23%;
+    
+}
+
+.icons-wrapper{
+    display: flex;
+    column-gap: 100px;
+}
+
+.twitter, .facebook, .google{
+    width: 30%;
+}
+
+.twitter:hover{
+    content: url(../images/twitter\(clicked\).png);
+}
+
+.facebook:hover{
+    content: url(../images/facebook\(clicked\).png);
+}
+
+.google:hover{
+    content: url(../images/google\(clicked\).png);
+}
+
+.secondmid-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
+    justify-content: center;
 }
