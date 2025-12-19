@@ -5,9 +5,20 @@
     font-style: italic;
 }
 
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     width: 100%;
     background-color: rgb(225, 243, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .header-wrapper {
@@ -15,18 +26,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .nav-list ul {
     display: flex;
-    justify-content: space-between;
     gap: 3rem;
-
 }
 
 .nav-list ul li {
-    background-color: transparent;
     list-style: none;
 }
 
@@ -37,6 +44,6 @@ header {
 }
 
 .cookako-logo {
-    width: 600px;
-    height: 200px;
+    width: 200px;
+    height: auto;
 }

@@ -1,0 +1,248 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  background-image: url("../images/bg-body.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+.main {
+  width: 100vh;
+  margin-top: 70px; /* offset for fixed header */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "left right"
+    "bottom right";
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+.left-content {
+  grid-area: left;
+  width: 100%;
+  height: 100%;
+}
+
+.chef {
+  position: absolute;
+  z-index: -1;
+  height: 200px;
+}
+
+/* =========================
+   LEFT BOTTOM CONTENT
+========================= */
+.left-bottom-content {
+  grid-area: bottom;
+  display: flex;
+  flex-direction: column;
+  margin-top: 600px;
+  color: red;
+  font-size: large;
+  line-height: 1.5;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.follow{
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.click img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.view{
+  width: 200px;
+}
+
+/* =========================
+   RIGHT CONTENT
+========================= */
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  grid-area: right;
+  width: 100%;
+  border-radius: 20px;
+  margin: 20px 0;
+  z-index: 100;
+}
+
+.header-gallery {
+  width: 450px;
+  margin-top: 100px
+}
+
+
+
+/* =========================
+   GALLERY CONTAINER
+========================= */
+.gallery-container {
+  background: #d6eaff;
+  padding: 10px 20px 20px;
+  margin: 0 1.2rem;
+  width: 429px;
+  height: 820px;
+  max-width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   GALLERY GRID
+========================= */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  background: white;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+  border-color: #0078ff;
+}
+
+/* =========================
+   PAGINATION
+========================= */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.pagination a {
+  margin-top: 40px;
+  padding: 6px 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.pagination a:hover {
+  background: #a6d1ff;
+}
+
+.pagination .active {
+  background: #0078ff;
+  color: white;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (min-width: 481px) {
+  .main {
+    padding-left: 20px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chef {
+    height: 300px;
+    top: 120px;
+  }
+
+  .follow img {
+    width: 300px;
+  }
+
+  .click img,
+  .view img {
+    width: 200px;
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+@media (min-width: 769px) {
+  .main {
+    padding-left: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "left right"
+      "bottom right";
+  }
+
+  .right-content {
+    width: 700px;
+    margin: 70px 0 20px 0;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .title-gallery {
+    position: sticky;
+    top: 120px;
+    text-align: left;
+    letter-spacing: 10px;
+  }
+
+  .chef {
+    height: 500px;
+    top: 170px;
+  }
+
+  .left-bottom-content {
+    padding: 0 80px 20px 100px;
+  }
+
+  .follow img {
+    width: 400px;
+  }
+
+  .click img,
+  .view img {
+    width: 250px;
+    margin-left: 75px;
+  }
+}

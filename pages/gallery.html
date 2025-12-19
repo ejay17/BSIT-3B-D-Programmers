@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="../style/gallery.css" />
+    <link rel="stylesheet" href="../style/header.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <script>
+        fetch("../snippets/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+          });
+      </script>
+    </header>
+
+    <div class="main">
+      <section class="left-content"></section>
+      <img class="chef" src="../images/bg-page.png" alt="chef image" />
+      <section class="left-bottom-content">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+          ducimus expedita nesciunt quibusdam error doloremque aliquam harum,
+          accusamus commodi! Dolore atque culpa nisi, consectetur sit
+          dignissimos adipisci voluptate asperiores unde!
+        </p>
+
+        <div class="links">
+          <a href="">
+            <img class="follow" src="../images/foIlow.png" alt="follow" />
+          </a>
+          <a href="">
+            <img class="click" src="../images/clickhere.png" alt="click here" />
+          </a>
+          <a href="">
+            <img class="view" src="../images/viewmore.png" alt="view more" />
+          </a>
+        </div>
+      </section>
+
+      <section class="right-content">
+        <img class="header-gallery" src="../images/header.png" alt="" />
+
+        <h1 class="title-gallery"></h1>
+
+        <div class="gallery-container">
+          <div class="gallery">
+            <img src="../images/gallery1.jpg" alt="" />
+            <img src="../images/gallery2.jpg" alt="" />
+            <img src="../images/gallery3.jpg" alt="" />
+            <img src="../images/gallery4.jpg" alt="" />
+            <img src="../images/gallery1.jpg" alt="" />
+            <img src="../images/gallery2.jpg" alt="" />
+            <img src="../images/gallery3.jpg" alt="" />
+            <img src="../images/gallery4.jpg" alt="" />
+            <img src="../images/gallery1.jpg" alt="" />
+            <img src="../images/gallery2.jpg" alt="" />
+            <img src="../images/gallery3.jpg" alt="" />
+            <img src="../images/gallery4.jpg" alt="" />
+            <img src="../images/gallery1.jpg" alt="" />
+            <img src="../images/gallery2.jpg" alt="" />
+            <img src="../images/gallery3.jpg" alt="" />
+            <img src="../images/gallery4.jpg" alt="" />
+            <img src="../images/gallery1.jpg" alt="" />
+            <img src="../images/gallery2.jpg" alt="" />
+            <img src="../images/gallery3.jpg" alt="" />
+            <img src="../images/gallery4.jpg" alt="" />
+            <img src="../images/gallery1.jpg" alt="" />
+          </div>
+
+          <div class="pagination">
+            <a href="">««</a>
+            <a href="gallery1.html">« First</a>
+            <a href="gallery1.html" class="active">1</a>
+            <a href="gallery2.html">2</a>
+            <a href="gallery3.html">3</a>
+            <a href="gallery4.html">4</a>
+            <a href="gallery5.html">5</a>
+            <a href="gallery6.html">6</a>
+            <a href="gallery7.html">7</a>
+            <a href="gallery8.html">8</a>
+            <a href="gallery9.html">9</a>
+            <a href="gallery10.html">10</a>
+            <a href="gallery18.html">Last »</a>
+            <a href="">»»</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
