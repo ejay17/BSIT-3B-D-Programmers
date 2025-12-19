@@ -1,39 +1,102 @@
 * {
-          margin: 0;
-          padding: 0;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	background-color: rgb(225, 243, 255);
+}
+
+.header-wrapper {
+	padding: 20px 240px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Open Sans";
+	src: url("../fonts/opensans-bolditalic-webfont.ttf") format("truetype");
+	font-weight: 700;
+	font-style: italic;
+}
+
+.nav-list ul {
+	display: flex;
+	justify-content: space-between;
+	gap: 3rem;
+}
+
+.nav-list ul li {
+	background-color: transparent;
+	list-style: none;
+}
+
+.nav-list ul li a {
+	font-family: "Open Sans", sans-serif;
+	text-decoration: none;
+	color: rgb(116, 116, 116);
 }
 
 body {
-          background-image: url('../images/bg-body.jpg');
+	background-image: url("../images/bg-body.jpg");
 }
 
 #news-container {
-          width: 100%;
+	width: 100%;
+	display: flex;
 }
 
 /* --- News --- */
 
 .chef-news {
-          width: 100%;
-          display: flex;
-}
+	width: 100%;
+	height: fit-content;
+	position: relative; /* Parent container, kailangan para ma-position ang child absolutely */
+	display: inline-block; /* Optional: depende sa layout */
 
-.chef {
-          padding-left: 5%;
+	.chef {
+		width: 45%; /* adjust ayon sa gusto mo */
+                    margin-left: 12%;
+		display: block;
+	}
 }
 
 .news {
-          width: 40vw;
-          position: absolute;
-          left: 46%;
-          top: 30%;
-          background-image: url('../images/interface\ copy.png');
+          width: 42%;
+	position: absolute; /* overlay sa ibabaw ng image */
+	text-align: center;
+          top: 40px;
+          right: 130px;
+	background-image: url("../images/interface\ copy.png");
           background-repeat: no-repeat;
-          z-index: 3;
-          border-radius: 10px;
+	border-radius: 10px;
 }
 
 .chef-news .news-header {
-          padding: 1.3rem;
-          text-align: center;
+	padding: 1.2rem;
+	text-align: center;
+}
+
+.news-content {
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	padding: 100px 20px;
+	margin-left: 4px;
+	background-image: url(../images/whitecolumn.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	gap: 10px;
+
+	img {
+		width: 100px;
+		border: 6px solid white;
+	}
+
+	p {
+		text-align: left;
+	}
 }
