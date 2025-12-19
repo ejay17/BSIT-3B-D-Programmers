@@ -10,16 +10,20 @@
 </head>
 
 <body>
+          
+          <header>
+                    <div class="header-wrapper">
+                              <img src="/images/logo.jpg" alt="logo ng cookaka" class="cookako-logo">
 
-          <!-- Header -->
-          <header id="header">
-                    <script>
-                              fetch("../snippets/header.html")
-                                        .then(response => response.text())
-                                        .then(data => {
-                                                  document.getElementById("header").innerHTML = data;
-                                        });
-                    </script>
+                              <div class="nav-list">
+                                        <ul>
+                                                  <li><a href="../index.html">Home</a></li>
+                                                  <li><a href="../pages/about.html">About</a></li>
+                                                  <li><a href="../pages/news.html">News</a></li>
+                                                  <li><a href="../">Gallery</a></li>
+                                        </ul>
+                              </div>
+                    </div>
           </header>
 
           <section id="news-container">
